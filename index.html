@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .sekshn {
+      display: flex;
+      gap: 50px;
+      border-radius: 50px;
+      width: 900px;
+      align-items: center;
+      margin-left: 100px;
+      background-color: aliceblue;
+    }
+
+    .astu,
+    .astu2,
+    .astu3 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 50px;
+    }
+    .a,
+    b {
+      cursor: pointer;
+      padding: 5px 10px;
+      border: 1px solid black;
+    }
+
+    @media (max-width: 600px) {
+      .sekshn {
+        width: 100%;
+        margin-left: 0;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .astu,
+      .astu2,
+      .astu3 {
+        flex-direction: column;
+      }
+    }
+  </style>
+  <body>
+    <h1 style="opacity: 70%">Google Fonts</h1>
+
+    <div style="opacity: 70%" class="sekshn">
+      <p>Fonts</p>
+
+      <input id="textinput" placeholder="type something..." />
+
+      <p>32px</p>
+      <p class="a">a</p>
+      <p class="b">b</p>
+
+      <p>rerrange</p>
+      <p>elange</p>
+    </div>
+
+    <div class="astu">
+      <div
+        style="
+          width: 200px;
+          border-bottom: 2px solid black;
+          border-top: 2px solid black;
+        "
+      >
+        <p style="font-weight: bold">Roboto</p>
+
+        <p style="opacity: 70%">Christain</p>
+
+        <h2 class="hello">hello</h2>
+      </div>
+
+      <div
+        style="
+          width: 200px;
+          border-bottom: 2px solid black;
+          border-top: 2px solid black;
+        "
+      >
+        <p style="font-weight: bold">Gayathri</p>
+
+        <p style="opacity: 70%">SMC</p>
+
+        <h2 class="hello">hello</h2>
+      </div>
+
+      <div
+        style="
+          width: 200px;
+          border-bottom: 2px solid black;
+          border-top: 2px solid black;
+        "
+      >
+        <p style="font-weight: bold">Chilanka</p>
+
+        <p style="opacity: 70%">SMC</p>
+
+        <h2 class="hello">hello</h2>
+      </div>
+    </div>
+
+    <div class="astu2">
+      <div
+        style="
+          width: 200px;
+          border-bottom: 2px solid black;
+          border-top: 2px solid black;
+        "
+      >
+        <p style="font-weight: bold">Roboto</p>
+
+        <p style="opacity: 70%">Christain</p>
+
+        <h2 class="hello">hello</h2>
+      </div>
+
+      <div
+        style="
+          width: 200px;
+          border-bottom: 2px solid black;
+          border-top: 2px solid black;
+        "
+      >
+        <p style="font-weight: bold">Gayathri</p>
+
+        <p style="opacity: 70%">SMC</p>
+
+        <h2 class="hello">hello</h2>
+      </div>
+
+      <div
+        style="
+          width: 200px;
+          border-bottom: 2px solid black;
+          border-top: 2px solid black;
+        "
+      >
+        <p style="font-weight: bold">Chilanka</p>
+
+        <p style="opacity: 70%">SMC</p>
+
+        <h2 class="hello">hello</h2>
+      </div>
+    </div>
+
+    <div class="astu3">
+      <div
+        style="
+          width: 200px;
+          border-bottom: 2px solid black;
+          border-top: 2px solid black;
+        "
+      >
+        <p style="font-weight: bold">Roboto</p>
+
+        <p style="opacity: 70%">Christain</p>
+
+        <h2 class="hello">hello</h2>
+      </div>
+
+      <div
+        style="
+          width: 200px;
+          border-bottom: 2px solid black;
+          border-top: 2px solid black;
+        "
+      >
+        <p style="font-weight: bold">Gayathri</p>
+
+        <p style="opacity: 70%">SMC</p>
+
+        <h2 class="hello">hello</h2>
+      </div>
+
+      <div
+        style="
+          width: 200px;
+          border-bottom: 2px solid black;
+          border-top: 2px solid black;
+        "
+      >
+        <p style="font-weight: bold">Chilanka</p>
+
+        <p style="opacity: 70%">SMC</p>
+
+        <h2 class="hello">hello</h2>
+      </div>
+    </div>
+    <script>
+      const input = document.getElementById("textinput");
+      const texts = document.querySelectorAll(".hello");
+      const btnA = document.querySelector(".a");
+      const btnB = document.querySelector(".b");
+
+      input.addEventListener("input", () => {
+        texts.forEach((el) => {
+          el.textContent = input.value || "hello";
+        });
+      });
+
+      btnA.addEventListener("click", () => {
+        document.body.style.background = "white";
+      });
+
+      btnB.addEventListener("click", () => {
+        document.body.style.background = "black";
+      });
+    </script>
+  </body>
+</html>
